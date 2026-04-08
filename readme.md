@@ -1,0 +1,1 @@
+Alter is a CLI tool based on rust
