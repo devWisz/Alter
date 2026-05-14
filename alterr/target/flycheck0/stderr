@@ -1,0 +1,66 @@
+   0.112292500s  INFO prepare_target{force=false package_id=alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr) target="alterr"}: cargo::core::compiler::fingerprint: fingerprint error for alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr)/Check { test: false }/TargetInner { name: "alterr", doc: true, ..: with_path("C:\\Users\\sanke\\Desktop\\Alter\\alterr\\src\\main.rs", Edition2024) }
+   0.112399300s  INFO prepare_target{force=false package_id=alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr) target="alterr"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\sanke\Desktop\Alter\alterr\target\debug\.fingerprint\alterr-6d9aff78140c35cf\bin-alterr`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::cli::main
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\core\src\ops/function.rs:287:21
+  17: main
+  18: __tmainCRTStartup
+  19: mainCRTStartup
+  20: <unknown>
+  21: <unknown>
+   0.161008400s  INFO prepare_target{force=false package_id=alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr) target="alterr"}: cargo::core::compiler::fingerprint: fingerprint error for alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr)/Check { test: true }/TargetInner { name: "alterr", doc: true, ..: with_path("C:\\Users\\sanke\\Desktop\\Alter\\alterr\\src\\main.rs", Edition2024) }
+   0.161068400s  INFO prepare_target{force=false package_id=alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr) target="alterr"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\sanke\Desktop\Alter\alterr\target\debug\.fingerprint\alterr-98111b9ffb225774\test-bin-alterr`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\std\src\..\..\backtrace\src\backtrace/win64.rs:85:14
+   1: std::backtrace::Backtrace::capture
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\std\src/backtrace.rs:296:9
+   2: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::cli::main
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+             at /rustc/01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf/library\core\src\ops/function.rs:287:21
+  17: main
+  18: __tmainCRTStartup
+  19: mainCRTStartup
+  20: <unknown>
+  21: <unknown>
+    Checking alterr v0.1.0 (C:\Users\sanke\Desktop\Alter\alterr)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.46s

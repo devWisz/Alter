@@ -28,4 +28,4 @@ fn main() {
 
     println!("Target len: {:?}", output.metadata().unwrap().len());
     println!("Elapsed: {:?}", start.elapsed());
-}
+} 
